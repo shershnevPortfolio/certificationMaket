@@ -1,0 +1,402 @@
+*
+  max-width: 100%
+  word-break: break-word
+  // line-height: 10px
+
+.content-item
+  width: 100%
+  max-width: 45%
+
+
+  @media screen and ( max-width: 868px )
+    max-width: 90%
+
+  &:not(:last-child)
+    @media screen and ( max-width: 868px  )
+      margin-bottom: 20px
+
+
+
+.news-article__title
+  color: #59a386
+  font-size: 16px
+  font-weight: 400
+  margin-bottom: 11px
+
+.news-article__img
+  margin-bottom: 18px
+
+.news-article__title
+  margin-bottom: 18px
+
+.news-article__text
+  color: #666767
+  font-size: 14px
+  font-weight: 400
+
+
+
+
+.section
+  display: flex
+  justify-content: center
+  padding: 0px 15px
+
+.news-section
+  padding-top: 77px
+  padding-bottom: 77px
+  background-color: #cdcdcd
+
+
+.section__inner
+  max-width: 934px
+  width: 100%
+
+.section__title
+  color: #252222
+  text-align: center
+  font-family: "Bebas Neue"
+  font-size: 48px
+  font-weight: 400
+  text-transform: uppercase
+
+.new-section__title
+  margin-bottom: 65px
+
+.section__content
+  display: flex
+  justify-content: space-between
+
+  @media screen and ( max-width: 868px )
+    flex-direction: column
+    align-items: center
+
+
+.section__inner
+  // max-width: 950px
+.tags
+  margin-bottom: 60px
+
+.tags__btn-inner
+  display: flex
+  flex-wrap: wrap
+
+  .btn
+    margin-bottom: 10px
+
+.tags__title
+  display: block
+  margin-bottom: 25px
+  color: #59a386
+  font-family: "Bebas Neue"
+  font-size: 18px
+  font-weight: 400
+  line-height: 20px
+  text-transform: uppercase
+
+
+.btn
+  padding: 7px 11px
+  background-color: #59a386
+  color: #ffffff
+  font-size: 14px
+  font-weight: 400
+  cursor: pointer
+
+  &:not(:last-child)
+    margin-right: 6px
+
+  &:hover
+    background-color: #e2534b
+
+.news-post__info
+    margin-bottom: 24px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.news-post__categories-img
+  margin-right: 8px
+  display: flex
+  align-items: center
+
+.news-post__categories
+  display: flex
+  align-items: center
+  color: #e74c3c
+  font-size: 12px
+  font-weight: 400
+
+.date
+  padding: 6px 21px
+  background-color: #59a386
+  color: #fffefe
+  font-size: 11px
+  font-weight: 400
+
+
+
+.clients-section
+    align-items: center
+    background-color: #bebebe
+    padding-top: 77px
+    padding-bottom: 77px
+
+.clients-section__item
+    &:not(:last-child)
+      @media screen and ( max-width: 868px  )
+        margin-bottom: 50px
+
+
+
+.clients-section__content
+  align-items: center
+
+
+.bio-section
+  background-color: #e2534b
+  padding-top: 51px
+  padding-bottom: 79px
+
+.bio-section__title
+  margin-bottom: 60px
+
+
+.person
+  display: flex
+  flex-direction: column
+  align-items: center
+  // justify-content: center
+
+.person__social
+   margin-top: 48px
+
+.person__text
+  &:not(:last-child)
+    margin-bottom: 16px
+
+.person__avatar
+  padding: 45px 37px
+  background-color: #ffffff
+  border-radius: 100%
+
+.person__name
+  color: #ffffff
+  font-family: "Bebas Neue"
+  font-size: 36px
+  font-weight: 400
+  line-height: 18px
+  margin-bottom: 37px
+
+
+.bio-section__info
+  color: #ffffff
+  font-size: 14px
+  font-weight: 400
+  line-height: 18px
+
+.person__title
+  text-transform: uppercase
+  font-family: "Bebas Neue"
+  font-size: 18px
+  line-height: 48px
+
+.quote-section
+  padding-top: 103px
+  padding-bottom: 40px
+
+.quote-section__content
+  // color: #ffffff
+  display: flex
+  flex-direction: column
+  font-family: "Bebas Neue"
+  font-size: 36px
+  font-weight: 400
+  text-align: center
+  position: relative
+  color: #ffffff
+
+.quote
+  display: flex
+  align-items: center
+
+
+.quote-section__quote
+    position: relative
+    &::after
+      content: '“'
+      // display: block
+      font-size: 100px
+      position: absolute
+      right: -27px
+      bottom: 0
+      transform: translate(100%, 25%) rotate(-180deg)
+
+
+
+    &::before
+      content: '“'
+      // display: inline
+      font-size: 100px
+      position: absolute
+      left: -27px
+      top: 0
+      transform: translate(-100%, -30%)
+
+.quote-section__author
+  text-align: right
+  margin-top: 20px
+
+.portfolio-section
+  background-color: #65ba99
+  padding-top: 57px
+  padding-bottom: 102px
+
+.portfolio-section__title
+  color: #ffffff
+  margin-bottom: 50px
+
+  &::after
+    content: 'Glamour  fashion  personal  street  portrait'
+    font-family: "Bebas Neue"
+    font-size: 24px
+    font-weight: 400
+    display: block
+
+.gallery
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+
+  @media screen and ( max-width: 868px )
+      flex-direction: column
+      align-items: center
+
+.gallery__item
+  width: 50%
+  display: flex
+  position: relative
+
+  @media screen and ( max-width: 868px )
+    width: 100%
+
+
+
+.gallery__item-hover
+  opacity: 0
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  align-items: center
+  top: 0
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 1
+  background-color: rgba(101,186,153,.6)
+
+  &:hover
+    opacity: 1
+
+
+.gallery__item-hover-icons
+  display: flex
+  justify-content: center
+  margin-bottom: 20px
+  width: 100%
+
+  img
+    max-width: 30px
+    cursor: pointer
+
+    &:hover
+      opacity: .7
+
+    &:not(:last-child)
+      margin-right: 10%
+
+.gallery__item-hover-zoom
+  position: absolute
+  display: flex
+  height: 100%
+  align-items: center
+
+  img
+    cursor: pointer
+
+    &:hover
+      opacity: .7
+
+
+
+.gallery__image
+  height: 100%
+  flex: auto
+  position: relative
+
+  img
+    height: 100%
+    width: 100%
+    z-index: 0
+
+
+.blog-posts__item
+  display: flex
+
+  &:not(:last-child)
+    margin-bottom: 19px
+
+
+.blog-posts__date
+  color: rgba(226,83,75, .5)
+  font-size: 13px
+  font-weight: 400
+  line-height: 19.5px
+
+.blog__posts-image
+  overflow: hidden
+  margin-right: 18px
+  border-radius: 6px
+  max-height: 70px
+  width: 100%
+  max-width: 70px
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.blog-posts__text
+  color: #252222
+  font-size: 13px
+  font-weight: 400
+  line-height: 19.5px
+
+.blog-posts__title
+  margin-bottom: 23px
+  color: #818181
+  font-size: 20px
+  font-style: italic
+  line-height: 24px
+
+.blog-posts__title--weight
+  color: #252222
+  font-weight: 400
+  margin: 0 4px
+
+
+.read-more
+  display: block
+  text-align: right
+  color: #e2534b
+  font-size: 14px
+  font-weight: 400
+  line-height: 20.8px
+  cursor: pointer
+  margin-top: 20px
+
+  &:hover
+    color: #000
+
+.read-more__arrow
+  margin-left: 15px
