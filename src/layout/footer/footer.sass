@@ -2,4 +2,116 @@
   flex-grow: 0
   flex-shrink: 0
   flex-basis: auto
+  background-color: #f6f3ff
+  padding: 100px 20% 90px
+
+  @media screen and ( max-width: 1368px )
+    padding: 0 $mediaMainPadding
   
+.footer__logo
+    margin-bottom: 56px
+
+.footer__navigation
+  &:not(:last-child)
+    margin-right: 163px
+
+    @media screen and ( max-width: 512px )
+      margin-right: 0
+      margin-bottom: 50px
+    
+
+.footer__main-info
+  margin-bottom: 100px
+
+.footer__navigation-inner
+  flex-direction: column
+
+  .navigation__link
+      color: #242425
+      font-family: 'Overpass'
+      font-size: 18px
+      font-weight: 400
+      line-height: 38px
+      margin-right: 0
+
+.footer__navigation-inner--row
+  flex-direction: row
+
+.navigation__container
+  display: flex
+
+  @media screen and ( max-width: 512px )
+    flex-direction: column
+    
+
+.main-info
+  display: flex
+  justify-content: space-between
+  
+  @media screen and ( max-width: 1368px )
+    flex-direction: column
+    align-items: flex-start
+
+.contacts
+  display: flex
+  flex-direction: column
+  width: 100%
+  max-width: 306px
+
+  @media screen and ( max-width: 1368px )
+    align-items: flex-start
+    margin-bottom: 50px
+
+.contacts__item
+    color: #242425
+    font-family: 'Overpass'
+    font-size: 18px
+    font-weight: 400
+    line-height: 28px
+
+    &:not(:last-child)
+      margin-bottom: 18px
+    
+
+.contacts__address
+  &:not(:last-child)
+    margin-bottom: 35px
+    
+.navigation__header
+  color: #242425
+  font-family: "Nunito-SemiBold"
+  font-size: 20px
+  font-weight: 400
+  line-height: 36px
+  text-transform: uppercase
+
+  &:not(:last-child)
+    margin-bottom: 48px
+    
+.additional-info
+  display: flex
+  justify-content: space-between
+  align-items: center
+  color: #242425
+  font-family: Overpass
+  font-size: 16px
+  font-weight: 400
+  line-height: 36px
+
+  @media screen and ( max-width: 1368px )
+    flex-direction: column
+    align-items: flex-start
+
+  .navigation__link
+    font-size: 16px
+
+.mobile-apps
+  display: flex
+  align-items: center
+
+.mobile-apps__text
+  display: block
+  margin-right: 25px
+
+.mobile-apps__item
+  display: flex

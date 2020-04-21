@@ -1,6 +1,7 @@
 .button
   padding: 22px 42px
   border-radius: 30px
+  height: fit-content
   background-color: #ff3b69
   color: #ffffff
   font-size: 18px
@@ -11,12 +12,22 @@
 .section
   display: flex
   align-items: center
-  padding: 100px
+  padding: 0 $mainPadding
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
 
+  @media screen and ( max-width: 1368px )
+    padding: 0 $mediaMainPadding
 
+  
 .section__article
   max-width: 572px
   position: relative
+  
+  @media screen and ( max-width: 1368px )
+    margin-bottom: 50px
+    
 
 .section__header
   color: #ff5a71
@@ -35,9 +46,10 @@
 
 .section__article-button
   border-radius: 0
+  background-color: #ff5a71 
   background-image: linear-gradient(-56deg, #ff5a71 0%, #ff9669 100%)
 
-.img__test
+.about-section__img
   max-width: 582px
   margin-right: 90px
 
@@ -46,9 +58,11 @@
   z-index: 0
   padding: 179px 0px 193px 102px
   background-image: url('./about-section-bg.png')
-  background-position: center
-  background-repeat: no-repeat
-  background-size: cover
+
+  @media screen and ( max-width: 1368px )
+    flex-direction: column-reverse
+    padding: 150px $mediaMainPadding
+ 
 
 .section__article-paragraph
   font-family: 'Overpass'
@@ -75,10 +89,44 @@
   font-weight: 700
 
 .offers-section
+  flex-direction: column
+  align-items: center
+  padding-top: 58px
+  padding-bottom: 203px
+  background-image: url('./offers-section-bg.png')
+
+
+.offers-section__info
+  margin-bottom: 115px 
+  width: 100%
+  display: flex
   justify-content: center
+  align-items: center
+
+  @media screen and ( max-width: 1368px  )
+    flex-direction: column
+    
+
+  .button
+    border-radius: 0
+    background: transparent
+    color: #ff5a71
+    font-family: Overpass
+    font-size: 20px
+    font-weight: 400
+    line-height: 30px
+    border: 1px solid #f2f2f2
+
+.offers-section__headers
+  flex-grow: 1
+  max-width: 744px
+  margin-right: 209px
 
 .offers
   display: flex
+
+  @media screen and ( max-width: 1368px )
+    flex-direction: column
 
 .offers__column
   display: flex
@@ -91,11 +139,58 @@
     
 
 .offers__item
-  width: 370px
-  height: 450px
-  background: red
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 54px 50px 20px
+  width: 100%
+  max-width: 370px
+  min-height: 450px
+  box-shadow: 0 0 30px rgba(186, 184, 191, 0.35)
+  text-align: center
 
   &:not(:last-child)
     margin-bottom: 41px
 
-  
+.offers__item-content
+  color: #282828
+  font-family: 'Overpass'
+  font-size: 16px
+  font-weight: 400
+  line-height: 28px
+
+.offers__item-header
+  color: #282828
+  font-family: "Nunito-Semi Bold"
+  font-size: 26px
+  font-weight: 400
+  line-height: 38px
+  margin-bottom: 20px
+
+.offers__item-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100%
+  max-width: 114px
+  max-height: 115px
+  padding: 30px
+  margin-bottom: 40px
+  border-radius: 50%
+  background-color: #fb1030 
+  box-shadow: 0 16px 18px rgba(186, 186, 186, 0.35)
+  background-image: linear-gradient(-47deg, #fb1030 0%, #fd3abf 100%)
+
+
+.cloud-icon
+  background-color: #f7f2ff
+  background-image: linear-gradient(-44deg, #ff5a71 0%, #ff9669 100%)
+
+.startup-icon
+  background-color: #f7f2ff
+  background-image: linear-gradient(-44deg, #3dd6e0 0%, #4cf09d 100%)
+
+.adwords-icon
+  background-color: #f7f2ff
+  background-image: linear-gradient(-44deg, #4343ee 0%, #c453fe 100%)

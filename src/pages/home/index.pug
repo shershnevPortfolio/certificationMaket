@@ -3,7 +3,7 @@ extends /layout/app
 block content
   .container
     .section.about-section
-      .img__test
+      .about-section__img
         img(src="./vector-smart-object.png", alt="vector smart object")
       article.section__article
         span.section__header About SEO agency
@@ -13,18 +13,35 @@ block content
         p.section__article-paragraph--thin Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem 
         .button.section__article-button Learn more
     .section.offers-section
+      .offers-section__info
+        .offers-section__headers
+          span.section__header We’re Offering
+          h2.section__article-header SEO Services with talent specialist & Digital business
+        .button See More Services
       .offers
         .offers__column
           .offers__item
-            .offers__item-icon
-              img(src="", alt="")
+            .offers__item-icon.analysis-icon
+              img(src="./icons/analysis.png", alt="analysis")
             .offers__item-header Content Marketing
             .offers__item-content We craft great content that keep your users interested and coming back for more. I have mixed feelings about the explosion of web content.
         .offers__column
           .offers__item
+            .offers__item-icon.cloud-icon
+              img(src="./icons/cloud.png", alt="cloud")
+            .offers__item-header Link Building
+            .offers__item-content Links are still a powerful ranking factor in SEO. However, acquiring the wrong links could lead to a Google Penalty. 
           .offers__item
+            .offers__item-icon.startup-icon
+              img(src="./icons/startup.png", alt="startup")
+            .offers__item-header SEO & Social media
+            .offers__item-content Your data tells a story that we need to understand. We’ve built a proprietary report that pulls important SEO data from Google Search Console
         .offers__column
           .offers__item
+            .offers__item-icon.adwords-icon
+              img(src="./icons/adwords.png", alt="adwords")
+            .offers__item-header AdWords & PPC
+            .offers__item-content Is your Google AdWords budget disappearing without sales or calls? Or are you new to pay per click advertising, PPC?
 
     
 
